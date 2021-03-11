@@ -144,7 +144,7 @@ body {
 }
 .piano-key::after {
 	display: none;
-	content: attr(data-letter);
+	content: attr(data-content);
 }
 .piano-key:hover::before,
 .piano-key:hover::after {
@@ -167,7 +167,7 @@ body {
 	display: block;
 }
 .piano-key-letter::before {
-	content: attr(data-letter);
+	content: attr(data-content);
 }
 
 .piano-key-remove-mouse:active::before {

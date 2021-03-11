@@ -5,7 +5,7 @@ const fullScreenBtn = document.querySelector('.fullscreen');
 let keyDownFlag = false;
 let mouseDownFlag = false;
 
-function playNote(e,path){
+function playNote(e,path){   
     
     let audio = document.querySelector(`audio[data-letter="${path}"]`);
     let key = document.querySelector(`.piano-key[data-letter="${path}"]`);
@@ -41,7 +41,7 @@ function removeStyles(){
 
 document.addEventListener('keydown', ()=>{
     if(!keyDownFlag){
-        playNote(event,(event.key).toUpperCase());
+        playNote(event,event.code);
     }    
 });
 
